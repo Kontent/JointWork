@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension type="component" version="1.7" method="upgrade">
+	<name>COM_JOINTWORK</name>
+	<version>@jointworkversion@</version>
+	<creationDate>@jointworkversiondate@</creationDate>
+	<author>Kontent Design</author>
+	<authorEmail>support@kontentdesign.com</authorEmail>
+	<authorUrl>http://extensions.kontentdesign.com</authorUrl>
+	<copyright>(c) 2011 Kontent Design. All rights reserved.</copyright>
+	<license>GNU/GPL License</license>
+	<description>COM_JOINTWORK_DESCRIPTION</description>
+	<scriptfile>install/install.script.php</scriptfile>
+	<files folder="site">
+		<filename>CHANGELOG.php</filename>
+		<filename>controller.php</filename>
+		<filename>COPYRIGHT.php</filename>
+		<filename>htaccess.txt</filename>
+		<filename>index.html</filename>
+		<filename>jointwork.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_jointwork.ini</language>
+	</languages>
+	<media folder="media" destination="jointwork">
+		<filename>index.html</filename>
+		<folder>favicons</folder>
+		<folder>images</folder>
+		<folder>templates</folder>
+	</media>
+	<administration>
+		<menu view="default" img="media/jointwork/favicons/jointwork.png">COM_JOINTWORK_MENU</menu>
+		<!-- <submenu>
+			<menu view="config" img="media/jointwork/favicons/config.png">COM_JOINTWORK_CONFIGURATION</menu>
+		</submenu> -->
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>api.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>htaccess.txt</filename>
+			<filename>index.html</filename>
+			<filename>jointwork.php</filename>
+			<folder>controllers</folder>
+			<folder>install</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jointwork.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jointwork.sys.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="collection" priority="1" name="JointWork Update Site">http://extensions.kontentdesign.org/updates/jointwork</server>
+	</updateservers>
+</extension>
